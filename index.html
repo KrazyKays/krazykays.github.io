@@ -1,147 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil - Cabinet de Diététique</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Style personnalisé -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .hero-section {
-      background: url('https://via.placeholder.com/1920x800') center/cover no-repeat;
-      color: white;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .hero-section h1 {
-      font-size: 4rem;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
-    .hero-section p {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-    }
-    .services-section .card img {
-      height: 200px;
-      object-fit: cover;
-    }
-    footer {
-      background-color: #f8f9fa;
-      padding: 1rem 0;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diététicienne - Votre Santé, Ma Priorité</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Nom du Cabinet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Hero Section -->
-  <div class="hero-section">
-    <div>
-      <h1>Bienvenue au Cabinet de Diététique</h1>
-      <p>Votre partenaire pour une alimentation équilibrée et durable</p>
-      <a href="#services" class="btn btn-primary btn-lg mt-4">Découvrir nos services</a>
-    </div>
-  </div>
-
-  <!-- Services Section -->
-  <section id="services" class="services-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Nos Services</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Service 1">
-            <div class="card-body">
-              <h5 class="card-title">Consultations individuelles</h5>
-              <p class="card-text">Des conseils personnalisés pour atteindre vos objectifs nutritionnels.</p>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo et Infos -->
+            <div class="flex items-center">
+                <img src="logo.png" alt="Logo" class="h-12 w-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold">Votre Diététicienne</h1>
+                    <p class="text-sm text-gray-500">Nutrition & Bien-être</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Service 2">
-            <div class="card-body">
-              <h5 class="card-title">Ateliers de groupe</h5>
-              <p class="card-text">Participez à nos ateliers pratiques sur l’alimentation équilibrée.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Service 3">
-            <div class="card-body">
-              <h5 class="card-title">Suivi en ligne</h5>
-              <p class="card-text">Bénéficiez d’un accompagnement à distance depuis chez vous.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">À propos de nous</h2>
-      <p class="text-center">Nous sommes un cabinet de diététique passionné par l’accompagnement des individus vers un mode de vie sain et équilibré. Nos conseils sont basés sur des approches personnalisées et scientifiques.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contactez-nous</h2>
-      <form>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="Votre nom">
-          </div>
-          <div class="col-md-6 mb-3">
-            <input type="email" class="form-control" placeholder="Votre email">
-          </div>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#accueil" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
+                <a href="#a-propos" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-500 transition">Services & Tarifs</a>
+                <a href="#professionnels" class="text-gray-700 hover:text-blue-500 transition">Pour les professionnels</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
+            </nav>
+            
+            <!-- Menu Hamburger pour mobile -->
+            <button class="block md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
         </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Votre message"></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </div>
-      </form>
-    </div>
-  </section>
+    </header>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2024 Nom du Cabinet. Tous droits réservés.</p>
-    </div>
-  </footer>
+    <!-- Contenu -->
+    <main class="mt-20">
+        <!-- Accueil -->
+        <section id="accueil" class="py-20 bg-blue-100 text-center">
+            <h2 class="text-3xl font-bold mb-4">Bienvenue sur le site de Votre Diététicienne</h2>
+            <p class="text-gray-700">Découvrez nos services pour une alimentation équilibrée et adaptée à vos besoins.</p>
+        </section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- À Propos -->
+        <section id="a-propos" class="py-20 bg-white text-center">
+            <h2 class="text-3xl font-bold mb-4">À propos</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">
+                Je suis diététicienne diplômée avec une passion pour accompagner mes patients vers une meilleure santé grâce à une nutrition personnalisée.
+            </p>
+        </section>
+
+        <!-- Services & Tarifs -->
+        <section id="services" class="py-20 bg-gray-100 text-center">
+            <h2 class="text-3xl font-bold mb-4">Services & Tarifs</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">Découvrez nos consultations et nos tarifs adaptés à vos besoins.</p>
+        </section>
+
+        <!-- Pour les professionnels -->
+        <section id="professionnels" class="py-20 bg-white text-center">
+            <h2 class="text-3xl font-bold mb-4">Pour les professionnels</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">Nous proposons des services dédiés aux professionnels de santé et entreprises.</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-20 bg-blue-100 text-center">
+            <h2 class="text-3xl font-bold mb-4">Contact</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">N'hésitez pas à nous contacter pour toute information ou prise de rendez-vous.</p>
+        </section>
+    </main>
+
 </body>
 </html>
