@@ -137,5 +137,13 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="js/map.js"></script>
+    <script>
+        const hamburgerButton = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        hamburgerButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
