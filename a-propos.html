@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Florine GRISARD</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/map.css" />
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo et Infos -->
             <div class="flex items-center">
                 <img src="assets/logo.png" alt="Logo" class="h-12 w-12 mr-3">
                 <div>
@@ -18,6 +21,7 @@
                     <p class="text-sm text-gray-500">Diététicienne nutritionniste D.E - Napsothérapeute</p>
                 </div>
             </div>
+            <!-- Navigation -->
             <nav class="hidden md:flex space-x-6">
                 <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
                 <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
@@ -25,18 +29,92 @@
                 <a href="professionnels.html" class="text-gray-700 hover:text-blue-500 transition">Pour les professionnels</a>
                 <a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
             </nav>
+            <!-- Menu Hamburger -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-700 hover:text-blue-500 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Add mobile menu here -->
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-lg font-medium">
+            <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
+            <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
+            <a href="services.html" class="text-gray-700 hover:text-blue-500 transition">Services & Tarifs</a>
+            <a href="professionnels.html" class="text-gray-700 hover:text-blue-500 transition">Pour les professionnels</a>
+            <a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
         </div>
     </header>
 
     <!-- Contenu -->
     <main class="mt-20">
-        <section class="py-20 bg-white text-center">
-            <h2 class="text-3xl font-bold mb-4">À propos</h2>
+        <section class="py-20 bg-blue-100 text-center">
+            <h2 class="text-3xl font-bold mb-4">À propos de moi</h2>
             <p class="text-gray-700 max-w-3xl mx-auto">
-                Florine GRISARD est une diététicienne passionnée, dédiée à vous accompagner vers un mode de vie sain et équilibré. Forte de plusieurs années d'expérience, elle adapte son approche à vos besoins spécifiques.
+                Je suis Florine GRISARD, diététicienne nutritionniste diplômée d'État et napsothérapeute. Passionnée par l'alimentation et le bien-être, 
+                j'accompagne mes patients dans leur quête d'une meilleure santé et d'une relation plus sereine avec leur corps.
             </p>
+        </section>
+
+        <section class="py-10 px-6">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Mon parcours</h3>
+                    <p class="text-gray-700">
+                        Avec plusieurs années d'expérience, j'ai travaillé auprès de patients aux profils variés : enfants, adultes, sportifs ou personnes atteintes de pathologies chroniques.
+                        Mon objectif est d'offrir un accompagnement personnalisé et bienveillant, basé sur des approches scientifiques et des outils pratiques.
+                    </p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Ma philosophie</h3>
+                    <p class="text-gray-700">
+                        Je crois en une approche holistique de la nutrition, alliant science et écoute de soi. Chaque individu est unique, et mes recommandations prennent en compte vos besoins spécifiques,
+                        votre rythme de vie et vos objectifs.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+            <!-- Logo et Nom -->
+            <div class="flex flex-col items-center md:items-start">
+                <img src="assets/logo.png" alt="Logo" class="h-12 w-12 mb-3">
+                <h2 class="text-lg font-bold">Florine GRISARD</h2>
+                <p class="text-sm text-gray-400">Diététicienne nutritionniste D.E - Napsothérapeute</p>
+            </div>
+    
+            <!-- Coordonnées -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Coordonnées</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><strong>Téléphone :</strong> <a href="tel:+33123456789" class="text-blue-400 hover:underline">01 23 45 67 89</a></li>
+                    <li><strong>Adresse :</strong> 6 Rue de la Mare Pavée, 35510 Cesson-Sévigné</li>
+                    <li><strong>Email :</strong> florine.grisard@email.com</li>
+                </ul>
+            </div>
+    
+            <!-- Liens externes -->
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-lg font-bold mb-4">Liens utiles</h3>
+                <ul class="space-y-2">
+                    <li><a href="mentions-legales.html" class="text-blue-400 hover:underline">Mentions légales</a></li>
+                    <li><a href="politique-de-confidentialite.html" class="text-blue-400 hover:underline">Politique de confidentialité</a></li>
+                    <li><a href="politique-de-cookies.html" class="text-blue-400 hover:underline">Politique de cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-sm text-gray-500">
+            <p>© 2024 Florine GRISARD. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/hamburgermenu.js"></script>
 </body>
 </html>
