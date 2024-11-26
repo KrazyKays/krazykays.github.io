@@ -62,27 +62,30 @@
         <section class="py-10 px-6">
             <div class="container mx-auto space-y-10">
                 <!-- Cadre Horaires -->
-                <div class="relative bg-white shadow-md p-6 rounded-lg flex items-center">
-                    <div class="flex-1">
+                <div class="relative flex w-full">
+                    <div class="bg-white shadow-md p-6 rounded-lg w-1/2 relative z-10">
                         <h2 class="text-xl font-bold mb-4">Horaires</h2>
                         <ul class="space-y-2 text-gray-700">
                             <li><strong>Présentiel :</strong> Lundi et Samedi : 9h - 18h</li>
                             <li><strong>Téléconsultation :</strong> Lundi - Samedi : 9h - 18h</li>
                         </ul>
                     </div>
-                    <img src="assets/horaires.png" alt="Illustration Horaires" class="absolute top-0 right-0 h-full w-40 object-cover rounded-r-lg -z-10">
+                    <img src="assets/horaires.png" alt="Illustration Horaires" 
+                         class="absolute top-0 right-0 h-64 w-2/3 object-cover rounded-lg transform translate-x-10">
                 </div>
         
                 <!-- Cadre Localisation -->
-                <div class="relative bg-white shadow-md p-6 rounded-lg flex items-center">
-                    <div class="flex-1">
+                <div class="relative flex w-full">
+                    <div class="bg-white shadow-md p-6 rounded-lg w-1/2 relative z-10">
                         <h2 class="text-xl font-bold mb-4">Localisation</h2>
-                        <div id="map"></div>
+                        <div id="map" class="h-48 bg-gray-200 rounded"></div>
                     </div>
-                    <img src="assets/localisation.jpg" alt="Illustration Localisation" class="absolute top-0 right-0 h-full w-40 object-cover rounded-r-lg -z-10">
+                    <img src="assets/localisation.jpg" alt="Illustration Localisation" 
+                         class="absolute top-0 right-0 h-64 w-2/3 object-cover rounded-lg transform translate-x-10">
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
