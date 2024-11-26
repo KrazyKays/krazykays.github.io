@@ -60,19 +60,26 @@
             </p>
         </section>
         <section class="py-10 px-6">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="container mx-auto space-y-10">
                 <!-- Cadre Horaires -->
-                <div class="bg-white shadow-md p-6 rounded-lg">
-                    <h2 class="text-xl font-bold mb-4">Horaires</h2>
-                    <ul class="space-y-2 text-gray-700">
-                        <li><strong>Présentiel :</strong> Lundi et Samedi : 9h - 18h</li>
-                        <li><strong>Téléconsultation :</strong> Lundi - Samedi : 9h - 18h</li>
-                    </ul>
+                <div class="relative bg-white shadow-md p-6 rounded-lg flex items-center">
+                    <div class="flex-1">
+                        <h2 class="text-xl font-bold mb-4">Horaires</h2>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong>Présentiel :</strong> Lundi et Samedi : 9h - 18h</li>
+                            <li><strong>Téléconsultation :</strong> Lundi - Samedi : 9h - 18h</li>
+                        </ul>
+                    </div>
+                    <img src="assets/horaires.jpg" alt="Illustration Horaires" class="absolute top-0 right-0 h-full w-40 object-cover rounded-r-lg -z-10">
                 </div>
-                <!-- Cadre Carte -->
-                <div class="bg-white shadow-md p-6 rounded-lg relative z-10">
-                    <h2 class="text-xl font-bold mb-4">Localisation</h2>
-                    <div id="map"></div>
+        
+                <!-- Cadre Localisation -->
+                <div class="relative bg-white shadow-md p-6 rounded-lg flex items-center">
+                    <div class="flex-1">
+                        <h2 class="text-xl font-bold mb-4">Localisation</h2>
+                        <div id="map"></div>
+                    </div>
+                    <img src="assets/localisation.jpg" alt="Illustration Localisation" class="absolute top-0 right-0 h-full w-40 object-cover rounded-r-lg -z-10">
                 </div>
             </div>
         </section>
