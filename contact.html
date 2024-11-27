@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Florine GRISARD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo et Infos -->
+            <div class="flex items-center">
+                <img src="assets/logo.png" alt="Logo" class="h-12 w-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold">Florine GRISARD</h1>
+                    <p class="text-sm text-gray-500">Diététicienne nutritionniste D.E - Napsothérapeute</p>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
+                <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-500 transition">Services & Tarifs</a>
+                <a href="professionnels.html" class="text-gray-700 hover:text-blue-500 transition">Pour les professionnels</a>
+                <a href="contact.html" class="text-blue-500 font-semibold transition">Contact</a>
+            </nav>
+            <!-- Menu Hamburger -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-700 hover:text-blue-500 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <main class="mt-20">
+        <!-- En-tête -->
+        <section class="py-20 bg-blue-100 text-center">
+            <h2 class="text-3xl font-bold mb-6">Contactez-moi</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">
+                Pour toute question ou prise de rendez-vous, n'hésitez pas à utiliser le formulaire ci-dessous ou à me contacter directement par téléphone ou email.
+            </p>
+        </section>
+
+        <!-- Coordonnées et Formulaire -->
+        <section class="py-10 px-6 bg-gray-50">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Coordonnées -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Coordonnées</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><strong>Adresse :</strong> 6 Rue de la Mare Pavée, 35510 Cesson-Sévigné</li>
+                        <li><strong>Téléphone :</strong> <a href="tel:+33123456789" class="text-blue-500 hover:underline">01 23 45 67 89</a></li>
+                        <li><strong>Email :</strong> <a href="mailto:florine.grisard@email.com" class="text-blue-500 hover:underline">florine.grisard@email.com</a></li>
+                        <li><strong>Horaires :</strong></li>
+                        <li>- Lundi et Samedi : 9h - 18h (Présentiel)</li>
+                        <li>- Lundi au Samedi : 9h - 18h (Téléconsultation)</li>
+                    </ul>
+                </div>
+
+                <!-- Formulaire -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Envoyer un message</h3>
+                    <form action="send-message.php" method="POST" class="space-y-4">
+                        <div>
+                            <label for="nom" class="block text-sm font-medium text-gray-700">Nom</label>
+                            <input type="text" id="nom" name="nom" class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto text-center text-sm text-gray-400">
+            <p>© 2024 Florine GRISARD. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
