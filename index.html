@@ -13,7 +13,6 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div class="container mx-auto flex items-center justify-between py-4 px-6">
-            <!-- Logo et Infos -->
             <div class="flex items-center">
                 <img src="assets/logo.png" alt="Logo" class="h-12 w-12 mr-3">
                 <div>
@@ -21,7 +20,6 @@
                     <p class="text-sm text-gray-500">Diététicienne nutritionniste D.E - Napsothérapeute</p>
                 </div>
             </div>
-            <!-- Navigation -->
             <nav class="hidden md:flex space-x-6">
                 <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
                 <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
@@ -29,7 +27,6 @@
                 <a href="professionnels.html" class="text-gray-700 hover:text-blue-500 transition">Pour les professionnels</a>
                 <a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
             </nav>
-            <!-- Menu Hamburger -->
             <div class="md:hidden">
                 <button id="hamburger" class="text-gray-700 hover:text-blue-500 focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -38,21 +35,13 @@
                 </button>
             </div>
         </div>
-        <!-- Add mobile menu here -->
-        <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-lg font-medium">
-            <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
-            <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
-            <a href="services.html" class="text-gray-700 hover:text-blue-500 transition">Services & Tarifs</a>
-            <a href="professionnels.html" class="text-gray-700 hover:text-blue-500 transition">Pour les professionnels</a>
-            <a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
-        </div>
     </header>
-
 
     <!-- Contenu -->
     <main class="mt-20">
         <section id="accueil" class="py-20 bg-blue-100 text-center">
             <h2 class="text-3xl font-bold mb-4">Présentation</h2>
+            <img src="assets/herbe.png" alt="Bannière Bien-être" class="w-full h-64 object-cover rounded-lg mb-6">
             <p class="text-gray-700 max-w-3xl mx-auto">
                 Je propose des consultations en présentiel ou à distance (téléconsultation) pour les particuliers, adaptées à vos besoins et objectifs.
                 J'interviens également auprès des entreprises, des écoles, et d'autres structures pour des ateliers, conférences, ou actions de sensibilisation sur l'alimentation et le bien-être.<br><br>
@@ -64,6 +53,7 @@
                 <!-- Cadre Horaires -->
                 <div class="bg-white shadow-md p-6 rounded-lg relative">
                     <h2 class="text-xl font-bold mb-4">Horaires</h2>
+                    <img src="assets/horaires.png" alt="Horloge chaleureuse" class="w-full h-40 object-cover rounded-lg mb-4">
                     <ul class="space-y-2 text-gray-700">
                         <li><strong>Présentiel :</strong> Lundi et Samedi : 9h - 18h</li>
                         <li><strong>Téléconsultation :</strong> Lundi - Samedi : 9h - 18h</li>
@@ -73,6 +63,7 @@
                 <!-- Cadre Carte -->
                 <div class="bg-white shadow-md p-6 rounded-lg relative z-10">
                     <h2 class="text-xl font-bold mb-4">Localisation</h2>
+                    <img src="assets/location.png" alt="Image localisation" class="w-full h-40 object-cover rounded-lg mb-4">
                     <div id="map"></div>
                 </div>
             </div>
@@ -82,16 +73,14 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-10">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
-            <!-- Logo et Nom -->
             <div class="flex flex-col items-center md:items-start">
                 <img src="assets/logo.png" alt="Logo" class="h-12 w-12 mb-3">
                 <h2 class="text-lg font-bold">Florine GRISARD</h2>
                 <p class="text-sm text-gray-400">Diététicienne nutritionniste D.E - Napsothérapeute</p>
             </div>
-    
-            <!-- Coordonnées -->
             <div>
                 <h3 class="text-lg font-bold mb-4">Coordonnées</h3>
+                <img src="assets/contact.jpg" alt="Contact chaleureux" class="w-full h-40 object-cover rounded-lg mb-4">
                 <ul class="space-y-2 text-sm">
                     <li><strong>Téléphone :</strong> <a href="tel:+33123456789" class="text-blue-400 hover:underline">01 23 45 67 89</a></li>
                     <li><strong>Adresse :</strong> 6 Rue de la Mare Pavée, 35510 Cesson-Sévigné</li>
@@ -101,38 +90,18 @@
                     <li> - (Téléconsultation) Lundi - Samedi : 9h - 18h</li>
                 </ul>
             </div>
-    
-            <!-- Liens externes -->
             <div class="flex flex-col items-center md:items-start">
                 <h3 class="text-lg font-bold mb-4">Liens utiles</h3>
+                <img src="assets/social.jpg" alt="Réseaux sociaux" class="w-full h-40 object-cover rounded-lg mb-4">
                 <ul class="space-y-2">
                     <li>
                         <a href="https://www.instagram.com/votrecompte" target="_blank" class="text-blue-400 hover:underline flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M7.75 2C4.678 2 2 4.678 2 7.75v8.5C2 19.322 4.678 22 7.75 22h8.5c3.072 0 5.75-2.678 5.75-5.75v-8.5C22 4.678 19.322 2 16.25 2h-8.5zm9.5 2c.414 0 .75.336.75.75v2.5a.75.75 0 01-1.5 0v-2.5c0-.414.336-.75.75-.75zM12 6.25a5.75 5.75 0 110 11.5 5.75 5.75 0 010-11.5zm0 2a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z"></path>
-                            </svg>
                             Instagram
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.rdvsite.com/votrepage" target="_blank" class="text-blue-400 hover:underline flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M11.35 3.5H6.5v1.2h4.85L6.5 12h7.2l-1.45 6.15h4.85V16h-4.85l1.45-6.15H6.5l4.85-8.5z"></path>
-                            </svg>
-                            Prendre rendez-vous
-                        </a>
-                    </li>
                     <li><a href="mentions-legales.html" class="text-blue-400 hover:underline">Mentions légales</a></li>
-                    <li><a href="politique-de-confidentialite.html" class="text-blue-400 hover:underline">Politique de confidentialité</a></li>
-                    <li><a href="politique-de-cookies.html" class="text-blue-400 hover:underline">Politique de cookies</a></li>
                 </ul>
             </div>
-        </div>
-    
-        <!-- Droits réservés -->
-        <div class="mt-8 text-center text-sm text-gray-500">
-            <p>© 2024 Florine GRISARD. Tous droits réservés.</p>
-            <p>Site développé par [Votre nom ou société].</p>
         </div>
     </footer>
 
