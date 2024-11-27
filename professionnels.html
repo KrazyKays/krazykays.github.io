@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour les professionnels - Florine GRISARD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo et Infos -->
+            <div class="flex items-center">
+                <img src="assets/logo.png" alt="Logo" class="h-12 w-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold">Florine GRISARD</h1>
+                    <p class="text-sm text-gray-500">Diététicienne nutritionniste D.E - Napsothérapeute</p>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
+                <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-500 transition">Services & Tarifs</a>
+                <a href="professionnels.html" class="text-blue-500 font-semibold transition">Pour les professionnels</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
+            </nav>
+            <!-- Menu Hamburger -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-700 hover:text-blue-500 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <main class="mt-20">
+        <!-- Introduction -->
+        <section class="py-20 bg-blue-100 text-center">
+            <h2 class="text-3xl font-bold mb-6">Services pour les professionnels</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">
+                J'accompagne les entreprises, écoles, associations et autres structures dans leurs projets liés à la nutrition, au bien-être et à la santé. Que ce soit pour des ateliers, des conférences ou des actions de sensibilisation, je m'adapte à vos besoins et à votre public.
+            </p>
+        </section>
+
+        <!-- Prestations -->
+        <section class="py-10 px-6">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Ateliers et conférences -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Ateliers & Conférences</h3>
+                    <p class="text-gray-700 mb-4">
+                        Je propose des interventions adaptées à votre structure, pour sensibiliser et informer votre public sur des thématiques variées :
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Équilibre alimentaire et santé</li>
+                        <li>Nutrition en milieu professionnel</li>
+                        <li>Gestion du stress par la nutrition</li>
+                        <li>Prévention des troubles alimentaires</li>
+                    </ul>
+                </div>
+
+                <!-- Actions personnalisées -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Actions personnalisées</h3>
+                    <p class="text-gray-700 mb-4">
+                        Besoin d'une approche sur-mesure ? Ensemble, nous concevons des programmes adaptés à vos objectifs spécifiques :
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Élaboration de menus pour collectivités</li>
+                        <li>Audits nutritionnels</li>
+                        <li>Conseil pour la mise en place de politiques de santé</li>
+                        <li>Suivi individuel ou collectif</li>
+                    </ul>
+                </div>
+
+                <!-- Collaborations -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Collaborations régulières</h3>
+                    <p class="text-gray-700">
+                        Je travaille en partenariat avec des structures variées (écoles, entreprises, associations) pour des collaborations à long terme. Contactez-moi pour discuter de vos projets !
+                    </p>
+                </div>
+
+                <!-- Avantages -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Pourquoi faire appel à moi ?</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Expertise en nutrition et bien-être</li>
+                        <li>Approche bienveillante et personnalisée</li>
+                        <li>Expérience dans l'accompagnement de groupes variés</li>
+                        <li>Interventions sur toute la France, en présentiel ou à distance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appel à l'action -->
+        <section class="py-10 bg-blue-500 text-white text-center">
+            <h3 class="text-2xl font-bold mb-4">Envie de collaborer ?</h3>
+            <p class="max-w-xl mx-auto mb-6">
+                Contactez-moi pour discuter de vos besoins et mettre en place des actions concrètes pour votre structure.
+            </p>
+            <a href="contact.html" class="py-3 px-6 bg-white text-blue-500 font-semibold rounded-lg hover:bg-gray-100 transition">
+                Me contacter
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto text-center text-sm text-gray-400">
+            <p>© 2024 Florine GRISARD. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
