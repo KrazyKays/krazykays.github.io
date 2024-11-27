@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Tarifs - Florine GRISARD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo et Infos -->
+            <div class="flex items-center">
+                <img src="assets/logo.png" alt="Logo" class="h-12 w-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold">Florine GRISARD</h1>
+                    <p class="text-sm text-gray-500">Diététicienne nutritionniste D.E - Napsothérapeute</p>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
+                <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
+                <a href="services.html" class="text-blue-500 font-semibold transition">Services & Tarifs</a>
+                <a href="professionnels.html" class="text-gray-700 hover:text-blue-500 transition">Pour les professionnels</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
+            </nav>
+            <!-- Menu Hamburger -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-gray-700 hover:text-blue-500 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <main class="mt-20">
+        <section class="py-20 bg-blue-100 text-center">
+            <h2 class="text-3xl font-bold mb-6">Nos Services et Tarifs</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">
+                Découvrez les services proposés pour vous accompagner dans votre démarche de santé et de bien-être.
+            </p>
+        </section>
+
+        <!-- Services -->
+        <section class="py-10 px-6 bg-gray-50">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Consultation Initiale</h3>
+                    <p class="text-gray-700 mb-4">
+                        Une première rencontre pour comprendre vos objectifs et établir un plan personnalisé.
+                    </p>
+                    <p class="text-lg font-semibold text-blue-500">60 €</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Consultation de Suivi</h3>
+                    <p class="text-gray-700 mb-4">
+                        Suivi régulier pour ajuster votre programme et répondre à vos questions.
+                    </p>
+                    <p class="text-lg font-semibold text-blue-500">40 €</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Ateliers Collectifs</h3>
+                    <p class="text-gray-700 mb-4">
+                        Ateliers sur des thèmes spécifiques (alimentation, gestion du stress, etc.).
+                    </p>
+                    <p class="text-lg font-semibold text-blue-500">Sur demande</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Bilan Nutritionnel</h3>
+                    <p class="text-gray-700 mb-4">
+                        Analyse détaillée de vos habitudes alimentaires et conseils adaptés.
+                    </p>
+                    <p class="text-lg font-semibold text-blue-500">70 €</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Téléconsultation</h3>
+                    <p class="text-gray-700 mb-4">
+                        Une consultation à distance, pratique et flexible.
+                    </p>
+                    <p class="text-lg font-semibold text-blue-500">50 €</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto text-center text-sm text-gray-400">
+            <p>© 2024 Florine GRISARD. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
