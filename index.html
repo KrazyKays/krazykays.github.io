@@ -69,12 +69,23 @@
         <section class="py-10 px-6">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Cadre Horaires -->
-                <div class="bg-white shadow-md p-6 rounded-lg relative">
-                    <h2 class="text-xl font-bold mb-4">Horaires</h2>
-                    <ul class="space-y-2 text-gray-700">
-                        <li><strong>Présentiel :</strong> Lundi et Samedi : 9h - 18h</li>
-                        <li><strong>Téléconsultation :</strong> Lundi - Samedi : 9h - 18h</li>
-                    </ul>
+                <div class="bg-white shadow-md p-6 rounded-lg relative flex flex-col items-start">
+                    <div class="flex items-center justify-between w-full">
+                        <div>
+                            <h2 class="text-xl font-bold mb-4">Horaires</h2>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Présentiel :</strong> Lundi et Samedi : 9h - 18h</li>
+                                <li><strong>Téléconsultation :</strong> Lundi - Samedi : 9h - 18h</li>
+                            </ul>
+                        </div>
+                        <!-- Image du logo à droite -->
+                        <img src="assets/logo.png" alt="Logo" class="h-16 w-16 ml-4">
+                    </div>
+                    <!-- Bouton 'Prendre rendez-vous' -->
+                    <a href="https://www.rdvsite.com/votrepage" target="_blank" 
+                       class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition self-center mt-4">
+                        Prendre rendez-vous
+                    </a>
                 </div>
 
                 <!-- Cadre Carte -->
