@@ -13,15 +13,13 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
         <div class="container mx-auto flex items-center justify-between py-4 px-6">
-            <!-- Logo et Infos -->
             <div class="flex items-center">
                 <img src="assets/logo.png" alt="Logo" class="h-12 w-12 mr-3">
                 <div>
                     <h1 class="text-xl font-bold">Florine GRISARD</h1>
-                    <p class="text-sm text-gray-500">Diététicienne nutritionniste D.E - Napsothérapeute</p>
+                    <p class="text-sm text-gray-500">Diététicienne Nutritionniste D.E - Napsothérapeute</p>
                 </div>
             </div>
-            <!-- Navigation -->
             <nav class="hidden md:flex items-center space-x-6">
                 <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
                 <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
@@ -33,25 +31,6 @@
                     Prendre rendez-vous
                 </a>
             </nav>
-            <!-- Menu Hamburger -->
-            <div class="md:hidden">
-                <button id="hamburger" class="text-gray-700 hover:text-blue-500 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile menu here -->
-        <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-lg font-medium">
-            <a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Accueil</a>
-            <a href="a-propos.html" class="text-gray-700 hover:text-blue-500 transition">À propos</a>
-            <a href="services.html" class="text-gray-700 hover:text-blue-500 transition">Services & Tarifs</a>
-            <a href="professionnels.html" class="text-gray-700 hover:text-blue-500 transition">Pour les professionnels</a>
-            <a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
-            <a href="https://www.rdvsite.com/votrepage" target="_blank" class="text-emerald-600 font-bold hover:underline">
-                Prendre rendez-vous
-            </a>
         </div>
     </header>
 
@@ -60,25 +39,47 @@
         <section class="py-20 bg-emerald-800 text-center">
             <h2 class="text-3xl text-white font-bold mb-4">À propos de moi</h2>
             <p class="text-white max-w-3xl mx-auto">
-                Je suis Florine GRISARD, diététicienne nutritionniste diplômée d'État et napsothérapeute. Passionnée par l'alimentation et le bien-être, 
-                j'accompagne mes patients dans leur quête d'une meilleure santé et d'une relation plus sereine avec leur corps.
+                Je suis Florine GRISARD, Diététicienne Nutritionniste D.E. et Napsothérapeute (Nutrition, Activité physique & Sommeil) sur Rennes, Cesson-Sévigné et en téléconsultation.
             </p>
         </section>
 
         <section class="py-10 px-6">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="container mx-auto grid grid-cols-1 gap-8">
                 <div class="bg-white shadow-md p-6 rounded-lg">
                     <h3 class="text-xl font-bold mb-4">Mon parcours</h3>
-                    <p class="text-gray-700">
-                        Avec plusieurs années d'expérience, j'ai travaillé auprès de patients aux profils variés : enfants, adultes, sportifs ou personnes atteintes de pathologies chroniques.
-                        Mon objectif est d'offrir un accompagnement personnalisé et bienveillant, basé sur des approches scientifiques et des outils pratiques.
-                    </p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>2018 : BTS diététique</li>
+                        <li>2020 : Licence en Biotechnologie et Sciences pour la santé</li>
+                        <li>2022 : Master en Biologie Santé Nutrition</li>
+                        <li>2024 : Diplôme de NAPSO-Thérapie</li>
+                    </ul>
+                    <h4 class="text-lg font-semibold mt-6">Mes expériences professionnelles :</h4>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li>Cabinet libéral</li>
+                        <li>Secteur hospitalier (gériatrie, oncologie, dialyse...)</li>
+                        <li>R&D projet nutritionnel (prévention des maladies cardiovasculaires, microbiote, assistance numérique en diététique)</li>
+                        <li>Animation d'ateliers santé (entreprises, écoles, hôpitaux)</li>
+                        <li>Enseignante en biotechnologie et hygiène alimentaire</li>
+                    </ul>
                 </div>
+
                 <div class="bg-white shadow-md p-6 rounded-lg">
                     <h3 class="text-xl font-bold mb-4">Ma philosophie</h3>
                     <p class="text-gray-700">
-                        Je crois en une approche holistique de la nutrition, alliant science et écoute de soi. Chaque individu est unique, et mes recommandations prennent en compte vos besoins spécifiques,
-                        votre rythme de vie et vos objectifs.
+                        J’offre un accompagnement global, personnalisé et bienveillant pour répondre à vos besoins spécifiques et vous aider à atteindre vos objectifs de santé et de bien-être.
+                    </p>
+                    <h4 class="text-lg font-semibold mt-6">Principes clés :</h4>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li>Aucun aliment interdit, sauf nécessité médicale.</li>
+                        <li>Recommandations adaptées à votre mode de vie et vos besoins spécifiques.</li>
+                        <li>Pas de régimes restrictifs, mais un apprentissage pour une autonomie alimentaire durable.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Bien plus que la nutrition</h3>
+                    <p class="text-gray-700">
+                        Nous aborderons aussi la gestion du stress, l'importance de l'activité physique et les habitudes de sommeil, dans une approche holistique de votre bien-être.
                     </p>
                 </div>
             </div>
@@ -86,58 +87,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-10 relative">
-        <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('assets/wellness.jpeg'); z-index: -1;"></div>
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 relative z-10">
-            <!-- Logo et Nom -->
-            <div class="flex flex-col items-center md:items-start">
-                <img src="assets/logo.png" alt="Logo" class="h-20 w-20 mb-3 filter grayscale brightness-0">
-                <h2 class="text-lg font-bold">Florine GRISARD</h2>
-                <p class="text-sm text-gray-700">Diététicienne nutritionniste D.E - Napsothérapeute</p>
-            </div>
-    
-            <!-- Coordonnées -->
-            <div>
-                <h3 class="text-lg font-bold mb-4">Coordonnées</h3>
-                <ul class="space-y-2 text-sm">
-                    <li><strong>Téléphone :</strong> <a href="tel:+33123456789" class="text-blue-700 hover:underline">01 23 45 67 89</a></li>
-                    <li><strong>Adresse :</strong> 6 Rue de la Mare Pavée, 35510 Cesson-Sévigné</li>
-                    <li><strong>Email :</strong> florine.grisard@email.com</li>
-                    <li><strong>Horaires :</strong></li>
-                    <li> - (Présentiel) Mercredi et Samedi : 9h - 18h</li>
-                    <li> - (Téléconsultation) Lundi - Samedi : 9h - 18h</li>
-                </ul>
-            </div>
-    
-            <!-- Liens externes -->
-            <div class="flex flex-col items-center md:items-start">
-                <h3 class="text-lg font-bold mb-4">Liens utiles</h3>
-                <ul class="space-y-2">
-                    <li>
-                        <a href="https://www.instagram.com/votrecompte" target="_blank" class="text-blue-700 hover:underline flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M7.75 2C4.678 2 2 4.678 2 7.75v8.5C2 19.322 4.678 22 7.75 22h8.5c3.072 0 5.75-2.678 5.75-5.75v-8.5C22 4.678 19.322 2 16.25 2h-8.5zm9.5 2c.414 0 .75.336.75.75v2.5a.75.75 0 01-1.5 0v-2.5c0-.414.336-.75.75-.75zM12 6.25a5.75 5.75 0 110 11.5 5.75 5.75 0 010-11.5zm0 2a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z"></path>
-                            </svg>
-                            Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.rdvsite.com/votrepage" target="_blank" class="text-blue-700 hover:underline flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M11.35 3.5H6.5v1.2h4.85L6.5 12h7.2l-1.45 6.15h4.85V16h-4.85l1.45-6.15H6.5l4.85-8.5z"></path>
-                            </svg>
-                            Prendre rendez-vous
-                        </a>
-                    </li>
-                    <li><a href="mentions-legales.html" class="text-blue-700 hover:underline">Mentions légales</a></li>
-                    <li><a href="politique-de-confidentialite.html" class="text-blue-700 hover:underline">Politique de confidentialité</a></li>
-                    <li><a href="politique-de-cookies.html" class="text-blue-700 hover:underline">Politique de cookies</a></li>
-                </ul>
-            </div>
-        </div>
-    
-        <!-- Droits réservés -->
-        <div class="mt-8 text-center text-sm text-gray-500">
+    <footer class="py-10">
+        <div class="container mx-auto text-center text-sm text-gray-500">
             <p>© 2024 Florine GRISARD. Tous droits réservés.</p>
         </div>
     </footer>
