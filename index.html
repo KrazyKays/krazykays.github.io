@@ -63,21 +63,19 @@
 
     <!-- Contenu -->
     <main class="mt-20">
-        <section id="accueil" class="py-20 bg-emerald-800 text-center">
-    <h2 class="text-3xl text-white font-bold mb-4">Présentation</h2>
-    
-    <!-- Container for the image and text -->
-    <div class="flex items-center justify-center">
+        <section id="accueil" class="py-20 bg-emerald-800 text-center relative">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/photo-acceuil.jpg');"></div>
+    <div class="relative container mx-auto flex items-center justify-between z-10">
         <!-- Image (left side) -->
         <div class="w-1/3 mr-8">
-           <!-- Image réduite avec un aspect ratio correct, sans déformation -->
-            <img src="assets/ma-photo.jpg" alt="Florine GRISARD" 
-                class="rounded-full w-full h-auto max-w-xs object-cover mx-auto">
+           <!-- Photo de nourriture sur le côté gauche -->
+            <img src="assets/photo-acceuil.jpg" alt="Nourriture saine" 
+                class="object-cover w-full h-full max-w-xs mx-auto rounded-lg shadow-lg">
         </div>
         
         <!-- Text (right side) -->
         <div class="w-2/3 text-white max-w-3xl mx-auto text-center">
-            <p>
+            <p class="text-5xl font-bold text-yellow-400 mb-6 animate__animated animate__fadeInUp">
                 « Le secret d’une vie saine réside dans l’équilibre, pas dans la restriction »
             </p>
             <p class="text-justify mt-6">
@@ -155,7 +153,7 @@
                     <div class="flex flex-col items-center justify-center flex-1 w-full mt-6">
                         <!-- Bouton 'Prendre rendez-vous' -->
                         <a href="https://www.madietenligne.fr/annuaire/florine-grisard" target="_blank" 
-                           class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                           class="bg-emerald-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 mt-6">
                             Prendre rendez-vous
                         </a>
                     </div>
