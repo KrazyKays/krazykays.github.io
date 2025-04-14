@@ -133,24 +133,40 @@
 <!-- Bloc Témoignages -->
 <section class="py-12 bg-white shadow-inner border-l-4 border-emerald-500">
   <div class="container mx-auto max-w-4xl text-center">
-    <h2 class="text-2xl font-bold mb-6">Témoignages</h2>
-    <div class="overflow-hidden relative">
-      <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-        <div class="min-w-full px-4">
-          <p class="text-lg italic text-gray-700">« Florine est très compétente et très à l'écoute. 
-              Elle a su comprendre que je voulais bien changer mes habitudes mais en simplicité avec ce qui est basique et rapide (dans les placards et sans trop de préparation) et les résultats sont là.
-              Elle a su aussi me conseiller quelques activités compatibles avec le quotidien pour bouger plus et quelques astuces pour améliorer la qualité de mon sommeil »</p>
-          <span class="block mt-4 text-sm text-gray-500">— Nadine L.</span>
-        </div>
-        <div class="min-w-full px-4">
-          <p class="text-lg italic text-gray-700">« J'ai consulté plusieurs professionnels depuis des années, mais c'est la première fois que je rencontre une approche aussi individuelle et globale, parfaitement adaptée à mes besoins. Madame Grisard propose un accompagnement bienveillant. Son professionnalisme me permet d'être sereine dans ce processus qui peut parfois être éprouvant. Grâce à elle, je me sens comprise et motivée. Je la recommande sans hésiter ! »</p>
-          <span class="block mt-4 text-sm text-gray-500">— Morgane S.</span>
+    <!-- Bloc entier dans un cadre -->
+    <div class="border-2 border-emerald-500 p-6 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold mb-6 text-emerald-500">Témoignages</h2>
+      <div class="overflow-hidden relative">
+        <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+          <!-- Témoignage 1 -->
+          <div class="min-w-full px-4">
+            <p class="text-lg italic text-gray-700">« Florine est très compétente et très à l'écoute. 
+                Elle a su comprendre que je voulais bien changer mes habitudes mais en simplicité avec ce qui est basique et rapide (dans les placards et sans trop de préparation) et les résultats sont là.
+                Elle a su aussi me conseiller quelques activités compatibles avec le quotidien pour bouger plus et quelques astuces pour améliorer la qualité de mon sommeil »</p>
+            <span class="block mt-4 text-sm text-gray-500">— Nadine L.</span>
+          </div>
+          <!-- Témoignage 2 -->
+          <div class="min-w-full px-4">
+            <p class="text-lg italic text-gray-700">« J'ai consulté plusieurs professionnels depuis des années, mais c'est la première fois que je rencontre une approche aussi individuelle et globale, parfaitement adaptée à mes besoins. Madame Grisard propose un accompagnement bienveillant. Son professionnalisme me permet d'être sereine dans ce processus qui peut parfois être éprouvant. Grâce à elle, je me sens comprise et motivée. Je la recommande sans hésiter ! »</p>
+            <span class="block mt-4 text-sm text-gray-500">— Morgane S.</span>
+          </div>
+          <!-- Témoignage 3 -->
+          <div class="min-w-full px-4">
+            <p class="text-lg italic text-gray-700">« Des conseils concrets, adaptés et un vrai suivi dans la durée. Je recommande ! »</p>
+            <span class="block mt-4 text-sm text-gray-500">— Julien D.</span>
+          </div>
         </div>
       </div>
+      <!-- Flèches de navigation -->
+      <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-emerald-500 p-2 rounded-full focus:outline-none" id="prevBtn">
+        &#10094;
+      </button>
+      <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-emerald-500 p-2 rounded-full focus:outline-none" id="nextBtn">
+        &#10095;
+      </button>
     </div>
   </div>
 </section>
-
 
         <section class="py-10 px-6">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -186,6 +202,7 @@
                     <div id="map"></div>
                     
                     <div class="text-gray-700">
+                        
                     <p><strong>Accès :</strong></p>
                     <ul class="list-disc list-inside mt-2">
                     <li>Parking gratuit sur place</li>
@@ -259,12 +276,30 @@
     <script src="js/hamburgermenu.js"></script>
 
 <script>
+  // Récupération du carousel
   const carousel = document.getElementById("carousel");
   let index = 0;
-  setInterval(() => {
+
+  // Fonction pour faire défiler
+  function moveCarousel() {
     index = (index + 1) % 3; // ici "3" = nombre de témoignages
     carousel.style.transform = `translateX(-${index * 100}%)`;
-  }, 5000); // 5000ms = 5 secondes entre chaque slide
+  }
+
+  // Défilement automatique toutes les 15 secondes
+  setInterval(moveCarousel, 15000); // 15000ms = 15 secondes entre chaque slide
+
+  // Fonction pour passer au témoignage suivant
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    index = (index + 1) % 3;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  });
+
+  // Fonction pour revenir au témoignage précédent
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    index = (index - 1 + 3) % 3;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  });
 </script>
     
 </body>
