@@ -187,26 +187,26 @@
                     <li>Bus C6 arrêt "Mare Pavée" en face du cabinet</li>
                 </ul>
             </div>
+        </div>
 
-            <!-- Image du logo à droite sur desktop, en dessous sur mobile -->
-            <img src="assets/logo.png" alt="Logo de Florine GRISARD, diététicienne nutritionniste" class="h-48 w-48 ml-4 mt-6 md:mt-0 md:ml-4 self-center md:self-start">
+        <!-- Cadre Image + Localisation -->
+        <div class="bg-white shadow-md p-6 rounded-lg relative flex flex-col items-center justify-between md:items-start">
+            <!-- Logo à droite sur grand écran et centré sur mobile -->
+            <img src="assets/logo.png" alt="Logo de Florine GRISARD, diététicienne nutritionniste" class="h-48 w-48 md:ml-4 mb-4 md:mb-0 self-center md:self-start">
             
-            <!-- Wrapper pour aligner le bouton en dessous des horaires et accès -->
+            <h2 class="text-xl font-bold mb-4">Localisation</h2>
+            <p class="mb-4 text-gray-700">
+                <strong>Adresse :</strong> 6 Rue de la Mare Pavée, 35510 Cesson-Sévigné
+            </p>
+            <div id="map"></div>
+
+            <!-- Wrapper pour aligner le bouton 'Prendre rendez-vous' -->
             <div class="flex flex-col items-center justify-center flex-1 w-full mt-6">
                 <a href="https://www.madietenligne.fr/annuaire/florine-grisard" target="_blank" 
                    class="bg-emerald-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 mt-6">
                     Prendre rendez-vous
                 </a>
             </div>
-        </div>
-
-        <!-- Cadre Carte -->
-        <div class="bg-white shadow-md p-6 rounded-lg relative z-10">
-            <h2 class="text-xl font-bold mb-4">Localisation</h2>
-            <p class="mb-4 text-gray-700">
-                <strong>Adresse :</strong> 6 Rue de la Mare Pavée, 35510 Cesson-Sévigné
-            </p>
-            <div id="map"></div>
         </div>
     </div>
 </section>
