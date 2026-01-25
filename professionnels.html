@@ -63,35 +63,33 @@
     
 <main class="mt-20">
   <!-- SECTION 1 : INTRODUCTION -->
-  <!-- Cette partie explique clairement à qui tu t’adresses et ce que tu proposes -->
-  <section class="py-16 bg-emerald-800 text-center px-4">
-    <h2 class="text-2xl md:text-3xl text-white font-bold mb-4">
+  <section class="py-20 bg-emerald-800 text-center">
+    <h2 class="text-3xl text-white font-bold mb-4">
       Interventions nutrition & bien-être pour les professionnels
     </h2>
+  </section>
+    
+  <!-- SECTION 2 : ATELIERS ET CONFÉRENCES -->
+  <section class="py-12 px-4">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
 
-    <p class="text-white max-w-3xl mx-auto text-base md:text-lg">
-      Entreprises, associations, établissements scolaires, structures médico-sociales…
-      J’accompagne vos équipes et vos publics grâce à des ateliers, conférences
-      et actions de prévention autour de la nutrition et du bien-être.
+        <!-- texte intro -->
+        <p class="mb-6 text-justify">
+      J'accompagne les entreprises, établissements scolaires, associations,
+    maisons de santé, maisons de retraite et autres structures dans leurs projets
+    liés à la nutrition, au bien-être et à la santé. Que ce soit pour des ateliers,
+    des conférences ou des actions de sensibilisation, je m'adapte à vos besoins
+    et à votre public.
     </p>
-
-    <p class="text-white max-w-3xl mx-auto mt-4">
-      Chaque intervention est pensée sur mesure, en fonction de vos objectifs,
-      de votre public et de vos contraintes.
-    </p>
-
+        
     <!-- CTA = bouton pour inciter à te contacter -->
     <a href="#contact-pro"
        class="inline-block mt-6 bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg">
       Demander un devis
     </a>
-  </section>
 
-  <!-- SECTION 2 : ATELIERS ET CONFÉRENCES -->
-  <section class="py-12 px-4">
-    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <!-- texte principal -->
       <h2 class="text-xl md:text-2xl font-bold mb-4">Ateliers & conférences</h2>
-
       <p class="mb-4">
         J’anime des ateliers interactifs et des conférences pédagogiques
         pour sensibiliser à l’alimentation équilibrée et au bien-être au quotidien.
@@ -104,8 +102,7 @@
       </ul>
 
       <p class="mt-4">
-        Les contenus, la durée et le format sont adaptés à votre structure
-        et aux personnes concernées.
+        Les contenus, la durée et le format sont adaptés à votre structure et aux personnes concernées.
       </p>
     </div>
   </section>
@@ -133,7 +130,7 @@
 
         <img src="assets/livret-atelier.png"
              alt="Livret pédagogique remis lors de l’atelier nutrition"
-             class="rounded-lg w-full h-48 object-cover sm:col-span-2">
+             class="rounded-lg w-full h-auto object-cover sm:col-span-2">
       </div>
 
       <!-- TEXTE DE PRÉSENTATION -->
@@ -176,8 +173,7 @@
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-xl md:text-2xl font-bold mb-4">Tarifs</h2>
       <p>
-        Les tarifs sont établis sur devis, en fonction du type d’intervention,
-        de la durée, du nombre de participants et du lieu.
+        Les tarifs sont établis sur devis, en fonction du type d’intervention, de la durée, du nombre de participants et du lieu.
       </p>
     </div>
   </section>
@@ -201,7 +197,12 @@
              placeholder="Nom de la structure" 
              required
              class="w-full border rounded-lg px-4 py-3">
-
+        
+      <!-- N° téléphone -->
+        <input type="tel" 
+            name="telephone" 
+            placeholder="Téléphone"
+            class="w-full border rounded-1g px-4 py-3">
       <!-- Email -->
       <input type="email" 
              name="email" 
@@ -227,6 +228,11 @@
     <p class="mt-4 text-sm text-gray-600 text-center">
       Les tarifs sont établis sur devis et adaptés à votre structure.
     </p>
+      <p class="text-xs text-gray-600 mt-2">
+    <em>Les informations collectées dans ce formulaire sont destinées à Florine Grisard
+    pour répondre à votre demande. Elles ne seront pas transmises à des tiers
+    et sont conservées le temps nécessaire au traitement de votre demande.</em>
+</p>
 
   </div>
 </section>
